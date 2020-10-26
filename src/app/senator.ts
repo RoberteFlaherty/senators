@@ -1,4 +1,4 @@
-export interface Hero {
+export interface Senator {
   state: string;
   name: string;
   party: string;
