@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Senator} from '../senator';
+import {SENATORS} from '../senators';
+
 
 @Component({
   selector: 'app-heroes',
@@ -8,15 +10,15 @@ import {Senator} from '../senator';
 })
 export class HeroesComponent implements OnInit {
 
-  senator: Senator = {
-    id:1,
-    name:"Marco Rubio",
-    party:"Republican",
-    state:"Florida"
-  };
+  senator: SENATORS;
+  selectedSenator:Senator;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit():  {
   }
 
+  onSelect(senator: Senator): void {
+    this.selectedSenator = senator;
+  }
 }
