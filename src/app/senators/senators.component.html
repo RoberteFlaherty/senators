@@ -2,17 +2,18 @@
 <ul class="senators">
   <li *ngFor="let senator of senators"
   [class.selected]="senator === selectedSenator"
-   (click)=onSelect(senator)>
+   (click)="onSelect(senator)">
     <span class="badge">{{senator.id}}</span>{{senator.name}}
     </li>
     </ul>
 
-    <div *ngIf="selectedSenator"
-  <h2>{{selectedSenator.name | uppercase}} Details 
-    <div><span>id: </span>{{selectedSenator.id}}</div>
+    <div *ngIf="selectedSenator">
+  <h2>{{selectedSenator.name | uppercase}} Details
+    <div><span>ID: </span>{{selectedSenator.id}}</div>
     <div>
       <label>name:
         <input [(ngModel)]="selectedSenator.name" placeholder="name" />
         </label>
-        </div>
+        <div><span>STATE: </span>{{selectedSenator.state}}</div>
+        <div><span>PARTY: </span>{{selectedSenator.party}}</div>
         </div>
