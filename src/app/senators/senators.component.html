@@ -1,12 +1,17 @@
 <h2>LIST OF SENATORS</h2>
 <ul class="senators">
-  <li *ngFor="let senator of senators"
+  <div>
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch"  fxLayoutGap="10px" flex-wrap="wrap">
+<ul >
+  <li fxFlex="50%"  *ngFor="let senator of senators"
   [class.selected]="senator === selectedSenator"
    (click)="onSelect(senator)">
     <span class="badge">{{senator.id}}</span>{{senator.name}}
     </li>
-    </ul>
-
+</ul>
+    </div>
+</div>
+<br><br>
     <div *ngIf="selectedSenator">
   <h2>{{selectedSenator.name | uppercase}} Details
     <div><span>ID: </span>{{selectedSenator.id}}</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Senator } from '../senator';
 import { SENATORS } from '../mock-senators';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @Component({
