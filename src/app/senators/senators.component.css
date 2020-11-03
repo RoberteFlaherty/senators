@@ -8,7 +8,8 @@ body{
   margin: 0 0 2em 0;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+
+
 
 }
 .senators li {
@@ -18,8 +19,10 @@ body{
   background-color: #EEE;
   margin: .5em;
   padding: .3em 0;
-  height: 1.6em;
+  height: 2em;
+  width:12em;
   border-radius: 4px;
+  display:inline-flex;
 }
 .senators li:hover {
   color: #607D8B;

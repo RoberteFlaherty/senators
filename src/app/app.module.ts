@@ -6,11 +6,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SenatorsComponent } from './senators/senators.component';
+import { SenatorDetailComponent } from './senator-detail/senator-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SenatorsComponent
+    SenatorsComponent,
+    SenatorDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

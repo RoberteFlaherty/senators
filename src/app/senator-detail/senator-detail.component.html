@@ -1,0 +1,11 @@
+
+<div *ngIf="senator">
+<h2>{{senator.name | uppercase}} Details
+<div><span>ID: </span>{{senator.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="senator.name" placeholder="name" />
+    </label>
+    <div><span>STATE: </span>{{senator.state}}</div>
+    <div><span>PARTY: </span>{{senator.party}}</div>
+    </div>
